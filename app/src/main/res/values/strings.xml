@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Meteo</string>
+    <string name="name_ville">Entrer le nom de la Ville</string>
+    <string name="valider">Valider</string>
+    <string name="Température">Température (ext) : </string>
+    <string name="TempératureRessenti">Temérature Ressentie :</string>
+</resources>

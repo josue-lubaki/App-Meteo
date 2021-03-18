@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8sp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C4C4C4"
+        android:textColor="@color/black"
+        android:hint="@string/name_ville"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="@string/valider"
+        android:layout_marginTop="10dp"
+        android:background="#1E531C"
+        android:layout_below="@+id/name_city"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn_valider"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/Température"/>
+
+            <TextView
+                android:id="@+id/showTempExt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/TempératureRessenti"/>
+
+            <TextView
+                android:id="@+id/showTempRessenti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+<!--     <TextView-->
+<!--         android:id="@+id/show_response"-->
+<!--         android:layout_width="match_parent"-->
+<!--         android:layout_height="match_parent"-->
+<!--         android:layout_below="@+id/btn_valider"-->
+<!--         android:textStyle="bold"-->
+<!--         android:textColor="@color/black"-->
+<!--         android:gravity="center_horizontal"-->
+<!--         android:padding="10dp"-->
+<!--         android:textSize="22sp"-->
+<!--         />-->
+
+</RelativeLayout>
